@@ -18,7 +18,7 @@ class DynamicArray(object):
 
     def append(self, ele):
 
-        #Here, we are checking the capacity
+        #Here, we are checking our count against the capacity, and resizing if needed.
         if self.n == self.capacity:
             ## If the array is at capacity, we will double the size.
             self.__resize(2*self.capacity)
